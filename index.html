@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Pick - 令人愉悦的图片管理工具</title>
+    <style>
+        :root {
+            --primary-color: #ff6d94;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 22%;
+            margin-bottom: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 1rem 0;
+            transition: opacity 0.2s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #eee;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #fff;
+                --bg-color: #1a1a1a;
+            }
+            
+            .feature-card {
+                background: #2d2d2d;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="app-icon.png" alt="Pink Pick 图标" class="app-icon">
+            <h1>Pink Pick</h1>
+            <p>令人愉悦的图片管理工具</p>
+        </header>
+
+        <main>
+            <section class="features">
+                <div class="feature-card">
+                    <h3>🖼️ 智能图片管理</h3>
+                    <p>轻松管理您的图片收藏，支持多种布局方式，包括瀑布流、网格等展示模式。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔍 便捷浏览</h3>
+                    <p>支持按时间、类别快速浏览，强大的搜索功能帮您迅速定位需要的图片。</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🌐 浏览器扩展</h3>
+                    <p>配备 Safari 浏览器扩展，让您在浏览网页时一键保存喜欢的图片。</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔐 隐私保护</h3>
+                    <p>内置隐私保护功能，支持私密收藏，确保您的个人收藏安全可靠。</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>⚡️ 高效性能</h3>
+                    <p>采用原生开发，性能优异，支持大量图片快速加载和流畅浏览。</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🎨 个性化体验</h3>
+                    <p>支持多种主题和布局方式，打造属于您的专属收藏空间。</p>
+                </div>
+            </section>
+
+            <section class="support">
+                <h2>技术支持</h2>
+                <p>如果您在使用过程中遇到任何问题，请通过以下方式联系我们：</p>
+                <ul>
+                    <li>电子邮件：<a href="mailto:zjsheng@msn.com">zjsheng@msn.com</a></li>
+                    <li>在 App Store 中查看更多信息</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Pink Pick. 保留所有权利。</p>
+            <p><a href="privacy.html">隐私政策</a> | <a href="terms.html">使用条款</a></p>
+        </footer>
+    </div>
+</body>
+</html>
